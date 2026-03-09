@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Nidhi!</title>
+    <style>
+        :root {
+            --cake-color: #f191ba;
+            --icing-color: #ffffff;
+            --candle-color: #ffd700;
+            --flame-color: #ff4500;
+        }
+
+        body {
+            background-color: #fff0f5; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .cake {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 40px;
+        }
+        .plate {
+            width: 240px;
+            height: 15px;
+            background: #dcdcdc;
+            border-radius: 10px;
+            position: absolute;
+            bottom: -10px;
+            left: -20px;
+        }
+        .layer {
+            position: absolute;
+            width: 200px;
+            border-radius: 10px 10px 0 0;
+        }
+        .layer-bottom { height: 60px; bottom: 0; background: #e863a0; }
+        .layer-middle { height: 50px; bottom: 60px; background: #f191ba; width: 180px; left: 10px; }
+        .layer-top    { height: 40px; bottom: 110px; background: #ffb7d5; width: 160px; left: 20px; }
+        .candle {
+            position: absolute;
+            bottom: 150px;
+            left: 95px;
+            width: 10px;
+            height: 40px;
+            background: var(--candle-color);
+            border-radius: 5px;
+        }
+        .flame {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 15px;
+            height: 25px;
+            background: var(--flame-color);
+            border-radius: 50% 50% 20% 20%;
+            box-shadow: 0 0 15px orange;
+            animation: flicker 0.5s infinite alternate;
+        }
+        @keyframes flicker {
+            from { transform: translateX(-50%) scale(1); opacity: 0.9; }
+            to { transform: translateX(-50%) scale(1.1); opacity: 1; }
+        }    
+        .message h1 {
+            color: #d81b60;
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+        .message h2 {
+            color: #ff69b4;
+            font-weight: 300;
+            margin-top: 0;
+        }
+        .sister-photo {
+            width: 300px; 
+            height: auto;
+            border-radius: 15px;
+            border: 8px solid #f191ba;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .sister-photo:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cake">
+            <div class="plate"></div>
+            <div class="layer layer-bottom"></div>
+            <div class="layer layer-middle"></div>
+            <div class="layer layer-top"></div>
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+        </div>
+        <div class="message">
+            <h1>Happy Birthday!</h1>
+            <h2>To my wonderful Sister</h2>
+            <img src="https://i.postimg.cc/L4Ggyxpy/Nidhi-jpg.jpg" alt="Nidhi" class="sister-photo">
+        </div>
+    </div>
+
+</body>
+</html>
