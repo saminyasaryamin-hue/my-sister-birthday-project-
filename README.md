@@ -1,1 +1,1 @@
-file:///C:/Users/LENOVO/OneDrive/Desktop/New%20folder/for%20nidhi/index.html
+http://127.0.0.1:5500/
